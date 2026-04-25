@@ -4,14 +4,14 @@ package org.example.classandobject;
 public class QAEngineer {
 
     // Attributes
-    public String name;
+    public String level;
     public Employee employee;
     public TestCase testCase;
     public BugReport bug;
 
     // Constructor
-    public QAEngineer(String name, Employee employee, TestCase testCase, BugReport bug) {
-        this.name = name;
+    public QAEngineer(String level, Employee employee, TestCase testCase, BugReport bug) {
+        this.level = level;
         this.employee = employee;
         this.testCase = testCase;
         this.bug = bug;
@@ -20,10 +20,9 @@ public class QAEngineer {
     // Method
     public void workSummary() {
 
-        System.out.println("QA Name: " + name);
-
         System.out.println("\nEmployee Info:");
         employee.showEmployeeInfo();
+        System.out.println("Level QA: " + level);
 
         System.out.println("\nAssigned Test Case:");
         testCase.showTestCase();
