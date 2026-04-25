@@ -8,7 +8,9 @@ public class MainInheritance {
                 "Mutia",
                 21,
                 "STD001",
-                "Computer Science"
+                "Computer Science",
+                Gender.FEMALE,
+                "Programming for the beginner"
         );
 
         // Constructor overloading
@@ -21,11 +23,12 @@ public class MainInheritance {
                 "Rafif",
                 30,
                 "TCH001",
-                "Java"
+                "Java",
+                Gender.MALE,
+                2021
         );
 
         Teacher teacher2 = new Teacher(
-                "Andi",
                 "TCH002"
         );
 

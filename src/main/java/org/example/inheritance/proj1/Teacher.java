@@ -5,23 +5,26 @@ public class Teacher extends Person {
 
     private String teacherId;
     public String subject;
+    private int yearEntry;
 
     // Constructor 1
-    public Teacher(String name, int age, String teacherId, String subject) {
+    public Teacher(String name, int age, String teacherId, String subject, Gender gender, int yearEntry) {
 
-        super(name, age);
+        super(name, age, gender);
 
         this.teacherId = teacherId;
         this.subject = subject;
+        this.yearEntry = yearEntry;
     }
 
     // Constructor Overloading
-    public Teacher(String name, String teacherId) {
+    public Teacher( String teacherId) {
 
-        super(name);
+        super();
 
         this.teacherId = teacherId;
         this.subject = "General Subject";
+        this.yearEntry = 2011;
     }
 
     public void showTeacherInfo() {
@@ -30,5 +33,6 @@ public class Teacher extends Person {
 
         System.out.println("Teacher ID: " + teacherId);
         System.out.println("Subject: " + subject);
+        System.out.println("Year Entry: " + yearEntry);
     }
 }
