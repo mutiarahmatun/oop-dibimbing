@@ -6,14 +6,16 @@ public class MainEncapsulation {
         // Create Customer Object
         Customer customer1 = new Customer(
                 "Mutia",
-                "Jakarta Selatan"
+                "Jakarta Selatan",
+                "Perempuan"
         );
 
         // Create Restaurant Object
         Restaurant resto1 = new Restaurant(
                 "Burger Station",
                 "Cheese Burger",
-                45000
+                45000,
+                "Makanan"
         );
 
         // Create Order Object
@@ -27,14 +29,16 @@ public class MainEncapsulation {
         order1.showOrderDetail();
 
         Customer customer2 = new Customer(
-                "Mutia",
-                "Jakarta"
+                "Andra",
+                "Jakarta",
+                "Laki-laki"
         );
 
         Restaurant resto2 = new Restaurant(
-                "Burger Station",
-                "Cheese Burger",
-                45000
+                "Juice Station",
+                "Orange Juice",
+                45000,
+                "Minuman"
         );
 
         Order order2 = new Order(

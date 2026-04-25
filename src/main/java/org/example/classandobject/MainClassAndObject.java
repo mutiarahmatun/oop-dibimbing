@@ -4,6 +4,13 @@ import java.util.Date;
 
 // Main.java
 public class MainClassAndObject {
+    /**
+     * Buat object Employee, bebas pake constructor yg mana aja
+     * Buat object BugReport, bebas pake constructor yg mana aja
+     * Copy object TestCase yang udah ada
+     * Buat Object QAEngineer
+     * panggil method workSummary() yang ada di class QAEngineer
+     * */
 
     public static void main(String[] args) {
 

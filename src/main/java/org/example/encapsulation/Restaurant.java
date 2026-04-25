@@ -6,12 +6,29 @@ public class Restaurant {
     public String restaurantName;
     protected String menuName;
     private double price;
+    private String typeOrder;
+
+    // tipe = Makanan atau minuman -> protected / private (kalau bukan ini, print tidak tersedia)
 
     // Constructor
-    public Restaurant(String restaurantName, String menuName, double price) {
+    public Restaurant(String restaurantName, String menuName, double price, String typeOrder) {
         this.restaurantName = restaurantName;
         this.menuName = menuName;
+        this.typeOrder = typeOrder;
         setPrice(price);
+    }
+
+    public String getTypeOrder() {
+        return typeOrder;
+    }
+
+    public void setTypeOrder(String typeOrder) {
+        if (typeOrder.equals("Makanan") || typeOrder.equals("Minuman")) {
+            this.typeOrder = typeOrder;
+        } else {
+            System.out.println("Makanan tidak tersedia");
+        }
+
     }
 
     // Getter
