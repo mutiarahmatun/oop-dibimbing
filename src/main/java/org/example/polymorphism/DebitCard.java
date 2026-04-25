@@ -1,25 +1,26 @@
 package org.example.polymorphism;
 
-// CreditCard.java
-public class CreditCard extends Payment implements BankTrans {
+public class DebitCard extends Payment {
 
     private String cardNumber;
+    private String tahunBerlaku;
 
     // Constructor
-    public CreditCard(double amount, String cardNumber) {
+    public DebitCard(double amount, String cardNumber) {
 
         super(amount);
 
         this.cardNumber = cardNumber;
+        this.tahunBerlaku = "12/26";
     }
 
     // Override Method
     @Override
     public void pay() {
 
-        System.out.println("Pay using Credit Card");
+        System.out.println("Pay using Debit Card");
         System.out.println("Amount: " + getAmount());
         System.out.println("Card Number: " + cardNumber);
-        System.out.println("Bank Name: " + BANKNAME);
+        System.out.println("Tahun berlaku " + tahunBerlaku);
     }
 }

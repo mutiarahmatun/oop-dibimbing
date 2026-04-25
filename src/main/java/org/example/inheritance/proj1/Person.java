@@ -13,7 +13,6 @@ public class Person {
     private int age;
     private Gender gender;
 
-
     // Constructor 1
     public Person(String name, int age) {
         this.name = name;
@@ -47,6 +46,10 @@ public class Person {
 
     public int getAge() {
         return age;
+    }
+
+    public Gender getGender() {
+        return gender;
     }
 
     // Setter

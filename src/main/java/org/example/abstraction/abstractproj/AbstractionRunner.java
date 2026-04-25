@@ -1,6 +1,11 @@
 package org.example.abstraction.abstractproj;
 
 public class AbstractionRunner {
+    /**
+     * Buat kelas baru WhatsAppNotification, extends dari abstract class Notification
+     * Implement abstract methodnya
+     *
+     * */
     public static void main(String[] args) {
 
         // Polymorphism + Abstraction
@@ -19,6 +24,11 @@ public class AbstractionRunner {
                 "Android"
         );
 
+        Notification notif4 = new WhatsAppNotification(
+                "Mutia",
+                "092793928"
+        );
+
         notif1.sendNotification();
         System.out.println();
 
@@ -26,5 +36,8 @@ public class AbstractionRunner {
         System.out.println();
 
         notif3.sendNotification();
+        System.out.println();
+
+        notif4.sendNotification();
     }
 }

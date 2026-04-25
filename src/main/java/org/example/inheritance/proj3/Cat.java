@@ -8,4 +8,9 @@ class Cat extends Animal implements Pet, Hunter {
     public void hunt() {
         System.out.println("Cat is hunting");
     }
+
+    @Override
+    void speak() {
+        System.out.println("Cat is screaming miawwwww");
+    }
 }
