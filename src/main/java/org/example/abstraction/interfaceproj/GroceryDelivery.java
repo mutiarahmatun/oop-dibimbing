@@ -16,4 +16,9 @@ public class GroceryDelivery implements Deliverable {
 
         System.out.println("Deliver groceries from: " + supermarket);
     }
+
+    @Override
+    public void statusDelivery(String status) {
+        System.out.println("Status delivery groceries from supermarket: " + supermarket + " has been " + status);
+    }
 }

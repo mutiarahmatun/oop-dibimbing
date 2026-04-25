@@ -17,7 +17,15 @@ public class InterfaceRunner {
         );
 
         delivery1.deliver();
+        delivery1.statusDelivery("Failed");
+        System.out.println("===================");
+
         delivery2.deliver();
+        delivery2.statusDelivery("Success");
+        System.out.println("===================");
+
         delivery3.deliver();
+        delivery3.statusDelivery("Pending");
+        System.out.println("===================");
     }
 }
