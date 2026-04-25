@@ -3,6 +3,13 @@ package org.example.encapsulation;
 public class MainEncapsulation {
     public static void main(String[] args) {
 
+        /***
+         * Buat class main baru
+         * set up object baru untuk Customer, Restaurant, Order
+         * panggil method showOrderDetail()
+         *
+         * */
+
         // Create Customer Object
         Customer customer1 = new Customer(
                 "Mutia",

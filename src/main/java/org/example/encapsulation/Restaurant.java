@@ -8,8 +8,6 @@ public class Restaurant {
     private double price;
     private String typeOrder;
 
-    // tipe = Makanan atau minuman -> protected / private (kalau bukan ini, print tidak tersedia)
-
     // Constructor
     public Restaurant(String restaurantName, String menuName, double price, String typeOrder) {
         this.restaurantName = restaurantName;
@@ -50,5 +48,6 @@ public class Restaurant {
         System.out.println("Restaurant: " + restaurantName);
         System.out.println("Menu: " + menuName);
         System.out.println("Price: " + price);
+        System.out.println("Order type: " + typeOrder);
     }
 }
